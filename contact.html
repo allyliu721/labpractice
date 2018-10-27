@@ -10,14 +10,14 @@
 		<link rel ="stylesheet" type = "text/css" href = "style.css">
 		
 		<!--HTML5 Shiv -->
-		<script src = "js/main.js"></script>
+		<script src = "js/html5shiv.js"></script>
 	</head>
 	
 	
 	
 	<body>
 		<div class = "header">
-					<ul>
+			<ul>
 					<li style = "color:white">SIGN IN</li>
 					<li style = "color:white">SIGN UP</li>
 					<a href = "shoppingcart.html">
@@ -26,7 +26,7 @@
 					<img src="images/cart.png"></a>
 					<div id = "cartnumber"></div>
 					</li>
-				</ul>
+			</ul>
 			
 		</div>
 
@@ -56,21 +56,67 @@
 			<p style = "font-family:didot; font-size:20px">Last Day to Receive 15% Off Your Order with "15OFF" Code</p>
 		</div>
 		
-		<a href = "product.html">
-		<img src = "images/background.png" alt = "Bun Bun Bakery Shop Image" style="width:device-width";height:600px;></img>
-		</a>
+		<div class = "abouttitle">
+			<h2 style = "font-family:bodoni">Bun Bun Bakery Shop</h2>
+			<p style = "font-family:bodoni"><i>Since 1995</i></p>
+		</div>
+		
+		
+		<div class = "contact-column1">
+			<img src = "images/contact.png">
 
+				<pre style = "font-family:didot">
+				<b>Phone:</b>  213-605-0000
+				<b>Mon-Fri:</b>  9:00AM-6:00PM
+				<b>Sat-Sun:</b>  10:00AM-5:00PM
+				<b>Address:</b>  300 S Craig St, Pittsburgh, PA
+				</pre>
+
+		</div>
+		
+		<div class = "contact-column2">
+		
+		
+			<div class = "container">
+				<form action = "/action_page.php">
+					<label for = "fname">First Name</label>
+					<input type = "text" id = "fname" name = "firstname" placeholder= "">
+					<label for = "lname">Last Name</label>
+					<input type = "text" id = "lname" name = "lastname" placeholder = "">
+					
+					<label for = "subject">Subject</label>
+					<textarea id = "subject" name = "subject" placeholder = "" style = "height:150px"></textarea>
+					
+					<input type = "Submit" value = "Submit">
+				</form>
+			</div>
+			
+			
+		</div>
+
+		<br><br><br><br>	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>
+		<br><br><br><br>	<br><br><br><br> 	<br><br>
 		<div class = "footer">
 			<p>Bun Bun Bakery Shop Copyright © 2018 Bakery Inc. All rights reserved</p>
 		</div>
-
-	</body>
-	
-	
-		<script>
-			
+		
+		
+		
+			<script>
 				cartTotal();
-		</script>
+			</script>
+		
 	
 	
+	
+	
+	
+	
+	</body>
+			
+			
+			
+			
+			
 </html>
+		
