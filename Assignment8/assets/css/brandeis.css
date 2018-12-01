@@ -1,0 +1,222 @@
+
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+p{
+  padding-bottom:8px;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+  height:100vh;
+
+}
+
+pre {
+  font-family:'Source Sans Pro';
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.5;
+    font-size:16px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none !important; 
+  color: #3d3d3d;
+  font-size: 15px;
+  display: block;
+  padding: 7px 10px;
+  position: relative;
+}
+
+ul li a:before {
+   text-decoration: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff900;
+  transform: scaleX(0);
+  transition: all 0.5s;
+  transform-origin: left
+}
+
+ ul li a:hover:before, ul li a:hover:after {
+  transform: scaleX(1);
+ }
+
+ ul li a:after {
+  text-decoration: none;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff900;
+  transform: scaleX(0);
+  transition: all 0.5s;
+  transform-origin: right
+}
+
+a {
+  color:#577ED1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 200px;
+
+     -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #DFDFDF;
+    display: block;
+    background:color;
+}
+
+.sidenav a:hover {
+    color: #577ED1;
+    font-weight:600;
+    font-size:16px;
+}
+
+.sidenav a.active {
+     color: #577ED1;
+    font-weight:600;
+    font-size:16px;
+}
+
+#sidefirst a:hover{
+
+}
+
+#sidesecond a:hover{
+
+}
+
+.main {
+    margin-right: 180px; 
+}
+
+#mainpic{
+    height: auto;
+    width: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.secheader{
+  font-weight:700;
+  color:#577ED1;
+  font-size:20px;
+  padding-bottom:10px;
+  padding-top:30px;
+}
+
+.inlinetext{
+  color:#577ED1;
+  font-weight:550;
+}
+
+.inlinebold{
+  font-weight:650;
+}
+
+.column{
+  float:left;
+  width:32%;
+  margin-right:18%;
+  margin-bottom:5%;
+  height:auto;
+}
+
+.brandeisdemo:after{
+  display:table;
+  clear:both;
+}
+
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#blurpage{
+  bottom:20px;
+  background-color:#577ED1;
+}
+
+#mysidefooter a {
+    position: relative;
+    left: 0px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#mysidefooter a:hover {
+    left: 20px;
+}
+
+.active {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.light-sidenav {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    background-color:rgba(4, 180, 49, 0.6);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.container {
+  padding-right:15%;
+  padding-left:10%;
+}
